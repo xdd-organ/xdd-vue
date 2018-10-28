@@ -19,6 +19,7 @@ const router = new Router({
     mode: 'hash',
     base: BASE_URL
 })
+export default router
 
 
 
