@@ -7,6 +7,11 @@ let routes = [
         name: 'index',
         component: () => import('@/view/index/index.vue')
     },
+    {
+        path: '/login',
+        name: 'login',
+        component: () => import('@/view/login/login.vue')
+    },
 ]
 
 const BASE_URL = process.env.NODE_ENV === 'production'
