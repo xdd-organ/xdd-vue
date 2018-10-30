@@ -17,19 +17,19 @@
             }
         },
         methods: {
-            hello() {
+            hello(event) {
                 console.log("点击了hello方法");
-                this.$router.push({path:"/"})
+                this.$router.push({path: "/"})
             },
             send() {
                 var _this = this;
                 axios({
                     method: "post",
-                    url:"https://www.chmbkh.com/mobile/anon/common/decrypt",
-                    headers:{
+                    url: "https://www.chmbkh.com/mobile/anon/common/decrypt",
+                    headers: {
                         'Content-type': 'application/json'
                     },
-                    data:{"decrypt":"10101010101010101010101010101010"}
+                    data: {"decrypt": "10101010101010101010101010101010"}
                 }).then(function (res) {
                     console.log(res)
                     _this.res1 = res.data.data;
@@ -37,6 +37,12 @@
                     console.log(res)
                 })
             }
+        },
+        created:function () {
+            console.log("创建成功")
+        },
+        beforeCreate: function () {
+            console.log("创建之前")
         }
     }
 
