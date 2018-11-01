@@ -12,6 +12,11 @@ let routes = [
         name: 'login',
         component: () => import('@/view/login/login.vue')
     },
+    {
+        path: '/success',
+        name: 'success',
+        component: () => import('@/view/success/success.vue')
+    },
 ]
 
 const BASE_URL = process.env.NODE_ENV === 'production'

@@ -8,6 +8,11 @@
         <div v-for="data in dataList">
             <li>{{data.name}}</li>
         </div>
+        <table>
+            <tr><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td></tr>
+        </table>
     </div>
 </template>
 
@@ -60,12 +65,17 @@
 
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 
-    #app {
+    div {
         #login {
             background: aqua;
         }
         background: #87ff8d;
+    }
+
+    table {
+        background: azure;
+        border:1px solid #0094ff;
     }
 </style>
